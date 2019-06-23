@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+hr {
+	display: block;
+	width: 100%;
+	height: 1px;
+	border: 0;
+	background-color: #e5e5e5;
+	margin: 40px 0;
+}
+
 /*Container*/
 .container {
 	width: 100%;
@@ -73,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0
+	right: 0;
 	z-index : 1000;
 }
 
@@ -206,6 +215,13 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 80px 0;
 }
 
+.section--devices {
+ padding-bottom: 0;
+	background:
+	url("../images/mountains.jpg") center no-repeat;
+	background-size: cover;
+}
+
 .section_header {
 	width: 100%;
 	max-width: 950px;
@@ -321,4 +337,53 @@ h1, h2, h3, h4, h5, h6 {
 .stat_text {
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+/*Services*/
+.services {
+	display: flex;
+}
+
+.services_item {
+	flex: 1 0 0;
+	padding-left: 85px;
+	padding-right: 20px;
+	position: relative;
+}
+
+.services_icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.services_title {
+	font-size: 14px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.services_text {
+	font-size: 15px;
+	color: #999;
+}
+
+/*Devises*/
+.devices {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.devices_item {
+	display: block;
+}
+
+.devices_item--s2 {
+	position: absolute;
+	bottom: -35px;
+	right: -50px;
+	z-index: 1;
 }
