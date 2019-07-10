@@ -28,7 +28,8 @@ hr {
 /*Container*/
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1230px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -271,12 +272,19 @@ hr {
 
 /*About*/
 .card {
+	margin: 80px -15px 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .card_item {
-	width: 240px;
+	width: 33.333%;
+	padding: 0 15px;
+	max-width: 240px;
+}
+
+.card_inner {
 	position: relative;
 	background-color: #95e1d3;
 }
@@ -300,6 +308,8 @@ hr {
 
 .card_image img {
 	display: block;
+	max-width: 100%;
+	width: auto;
 	transition: opacity .1s linear;
 }
 
@@ -326,6 +336,7 @@ hr {
 
 .stat {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .stat_item {
@@ -355,13 +366,18 @@ hr {
 /*Services*/
 .services {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .services_item {
-	flex: 1 0 0;
-	padding-left: 85px;
-	padding-right: 20px;
+	width: 20%;
+	padding: 0 35px 40px 85px;
 	position: relative;
+	margin-bottom: 40px;
+}
+
+.services_item--border {
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .services_icon {
@@ -404,10 +420,18 @@ hr {
 /*We do*/
 .wedo {
 	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
 }
 
 .wedo_item {
 	width: 50%;
+}
+
+.wedo_img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /*Accoridon*/
@@ -579,11 +603,13 @@ hr {
 	opacity: 1;
 }
 
+/*
 .works_image {
 	display: block;
 	transition: opacity .1s linear;
 	height: auto;
 }
+*/
 
 .works_info {
 	width: 100%;
@@ -977,4 +1003,157 @@ hr {
 
 .copyright span {
 	color: #f38181;
+}
+
+@media (max-width: 1230px) {
+
+  /*Intro*/
+	.intro_suptitle {
+		font-size: 52px;
+	}
+
+	.intro_title {
+		font-size: 120px;
+	}
+}
+
+@media (max-width: 990px) {
+
+	/*Stat*/
+	.stat {
+			justify-content: center;
+	}
+
+	.stat_item {
+		flex: none;
+		width: 25%;
+		border: 0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.stat_item:last-child {
+		border-right: 0;
+	}
+
+  /*Intro*/
+	.intro_suptitle {
+		font-size: 32px;
+	}
+
+	.intro_title {
+		font-size: 80px;
+	}
+
+	/*Services*/
+	.services_item {
+		width: 35%;
+		padding-bottom: 0;
+		padding-left: 80px;
+		margin-bottom: 20px;
+	}
+
+	.services_item--border {
+		border-bottom: 0;
+	}
+}
+
+@media (max-width: 770px) {
+
+	/*Services*/
+	.services_item {
+		width: 100%;
+		padding-left: 80px;
+		margin-bottom: 20px;
+	}
+
+	/*Section*/
+	.section {
+		padding: 40px 0;
+	}
+
+	/*Card*/
+	.card {
+		margin-top: 50px;
+		justify-content: center;
+	}
+
+	.card_item {
+		width: 100%;
+		max-width: 240px;
+		margin-bottom: 20px;
+	}
+
+	.card_item:last-child {
+		margin-bottom: 0;
+	}
+
+	/*Nav*/
+	.nav {
+		display: none;
+	}
+
+	/*Slider*/
+	.slider_text {
+		display: none;
+	}
+
+	.slider_item.active:before {
+		width: 50%;
+	}
+
+	.wedo_img {
+		display: none;
+	}
+
+	.wedo_item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 575px) {
+
+	/*Section*/
+	.section_header {
+		margin-bottom: 50px;
+	}
+
+	.section_title {
+		font-size: 24px;
+	}
+
+	.section_text {
+		font-size: 12px;
+	}
+
+	.section_suptitle {
+		font-size: 20px;
+	}
+
+	.section_title:after {
+		margin: 10px auto;
+	}
+
+  /*Intro*/
+	.intro_suptitle {
+		font-size: 22px;
+	}
+
+	.intro_title {
+		font-size: 40px;
+	}
+
+	/*Stat*/
+	.stat_item {
+		width: 100%;
+		border-bottom: 1px solid #b5eae0;
+	}
+
+	.stat_item:last-child {
+		border-bottom: 0;
+	}
+
+	.stat_count {
+		font-size: 52px;
+	}
 }

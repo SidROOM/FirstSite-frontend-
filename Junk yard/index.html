@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="asist/css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:Montserrat:300i,400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/727bc5ccec.js"></script>
@@ -36,18 +37,19 @@
 				 <div class="slider_inner">
 					 <div class="slider_item active">
 						 <span class="slider_num">01</span>
-						 Intro
+						 <span class="slider_text">Intro</span>
 					 </div>
 					 <div class="slider_item">
 						 <span class="slider_num">02</span>
-						 Work
+						 <span class="slider_text">Work</span>
 					 </div>
 					 <div class="slider_item">
 						 <span class="slider_num">03</span>
-						 About</div>
+						 <span class="slider_text">About</span>
+					 </div>
 					 <div class="slider_item">
 						 <span class="slider_num">04</span>
-						 Contacts
+						 <span class="slider_text">Contacts</span>
 					 </div>
 				 </div>
 			 </div>
@@ -68,22 +70,28 @@
 			</div>
 			<div class="card">
 				<div class="card_item">
-					<div class="card_image">
-						<img src="asist/images/Trevor1.jpg" alt="">
+					<div class="card_inner">
+						<div class="card_image">
+							<img src="asist/images/Trevor1.jpg" alt="">
+						</div>
+						<div class="card_text">Trevor</div>
 					</div>
-					<div class="card_text">Trevor</div>
 				</div>
 				<div class="card_item">
-					<div class="card_image">
-						<img src="asist/images/Trevor2.jpg" alt="">
+					<div class="card_inner">
+						<div class="card_image">
+							<img src="asist/images/Trevor2.jpg" alt="">
+						</div>
+						<div class="card_text">Trevor</div>
 					</div>
-					<div class="card_text">Trevor</div>
 				</div>
 				<div class="card_item">
-					<div class="card_image">
-						<img src="asist/images/Trevor3.jpg" alt="">
+					<div class="card_inner">
+						<div class="card_image">
+							<img src="asist/images/Trevor3.jpg" alt="">
+						</div>
+						<div class="card_text">Trevor</div>
 					</div>
-					<div class="card_text">Trevor</div>
 				</div>
 			</div>
 		</div> <!--/.container-->
@@ -124,30 +132,28 @@
 					<h2 class="section_title">Amazing Services</h2>
 			</div>
 			<div class="services">
-				<div class="services_item">
+				<div class="services_item services_item--border">
 					<img class="services_icon" src="asist/images/services/blue_icon.png" alt="">
 					<div class="services_title">Photography</div>
 					<div class="services_text">
 						<p> Bla bla bla.</p>
 					</div>
 				</div>
-				<div class="services_item">
+				<div class="services_item services_item--border">
 					<img class="services_icon" src="asist/images/services/pink_icon.png" alt="">
 					<div class="services_title">Web Design</div>
 					<div class="services_text">
 						<p> Bla bla bla.</p>
 					</div>
 				</div>
-				<div class="services_item">
+				<div class="services_item services_item--border">
 					<img class="services_icon" src="asist/images/services/brown_icon.png" alt="">
 					<div class="services_title">Creativity</div>
 					<div class="services_text">
 						<p> Bla bla bla bla bla.</p>
 					</div>
 				</div>
-			</div> <!--/services-->
-			<hr>
-			<div class="services">
+
 				<div class="services_item">
 					<img class="services_icon" src="asist/images/services/green_icon.png" alt="">
 					<div class="services_title">SEO</div>
@@ -155,6 +161,7 @@
 						<p> Bla bla bla bla bla.</p>
 					</div>
 				</div>
+
 				<div class="services_item">
 					<img class="services_icon" src="asist/images/services/grey_icon.png" alt="">
 					<div class="services_title">CSS/HTML</div>
@@ -162,6 +169,7 @@
 						<p> Bla bla bla bla bla.</p>
 					</div>
 				</div>
+
 				<div class="services_item">
 					<img class="services_icon" src="asist/images/services/yellow_icon.png" alt="">
 					<div class="services_title">Digital</div>
@@ -170,9 +178,8 @@
 					</div>
 				</div>
 			</div><!--/services-->
-			<hr>
 		</div> <!--/container-->
-	</section>
+</section>
 
  <!--------------------------------------------------------------------------------------------------------->
 	<section class="section section--devices">
@@ -196,7 +203,7 @@
 			</div>
 			<div class="wedo">
 				<div class="wedo_item">
-					<img src="asist/images/Trevor4.jpg" alt="">
+					<img class="wedo_img" src="asist/images/Trevor4.jpg" alt="">
 				</div>
 				<div class="wedo_item">
 					<div class="accordion">
@@ -266,7 +273,24 @@
 			</div>
 		</div>
 
-		<div class="works">
+		<!--<div class="works">
+			<div class="works_col">
+				<div class="works_item">
+					<img class="works_image" src="asist/images/works/1.png" alt="">
+					<div class="works_info">
+						<div class="works_title">creatively design</div>
+						<div class="works_text">Lorem ipsum dolor sit</div>
+					</div>
+				</div>
+				<div class="works_item">
+					<img class="works_image" src="asist/images/works/2.png" alt="">
+					<div class="works_info">
+						<div class="works_title">creatively design</div>
+						<div class="works_text">Lorem ipsum dolor sit</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="works_col">
 				<div class="works_item">
 					<img class="works_image" src="asist/images/works/1.png" alt="">
@@ -310,7 +334,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 	</section>
 
 	<!--------------------------------------------------------------------------------------------------------->
